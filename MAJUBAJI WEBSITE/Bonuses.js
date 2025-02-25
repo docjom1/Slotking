@@ -49,9 +49,9 @@ function renderBonuses() {
 document.addEventListener('DOMContentLoaded', renderBonuses);
 // Exclusive Bonuses Data
 const exclusiveBonuses = [
-    { name: "Betrebels Casino", bonus: "150% up to €750 + 50 Free Spins", type: "Welcome Bonus", img: "https://www.askgamblers.com/uploads/casino_logos_overview/casinoreview_logo/f1/4b/3c/1e2455fbbd5c3fc6198038248217d26b32/betrebels-casino-logo.jpg", link: "#" },
-    { name: "Playbet.io Casino", bonus: "300% up to 200 USDT + 200 Free Spins", type: "Welcome Bonus", img: "https://www.askgamblers.com/uploads/casino_logos_overview/casinoreview_logo/25/38/55/0c5cc836cf5390d696d684b0d82a524613/playbet-casino-logo.png", link: "#" },
-    { name: "PrimeBetz Casino", bonus: "55 Free Spins No Deposit Bonus", type: "No Deposit Bonus", img: "https://www.askgamblers.com/uploads/casino_logos_overview/casinoreview_logo/b6/5d/b2/96373f58da74a741eb04adb2e1c963fbe6/primebetz-casino-logo.png", link: "#", restricted: true },
+    { name: "majubaji", bonus: "Get 300BDT + 108BDT", type: "Welcome Bonus", img: "https://i.ibb.co/ymcv0xrv/photo-2025-01-18-13-05-01.jpg", link: "#" },
+    { name: "tcl99", bonus: "Get 300 Taka + 100% Bonus", type: "Welcome Bonus", img: "https://i.ibb.co/JFyQRrGt/photo-2025-02-25-18-09-47.jpg", link: "#" },
+    { name: "magibaji", bonus: "Get 300BDT + 108BDT", type: "Welcome Bonus", img: "https://www.askgamblers.com/uploads/casino_logos_overview/casinoreview_logo/b6/5d/b2/96373f58da74a741eb04adb2e1c963fbe6/primebetz-casino-logo.png", link: "#", restricted: true },
     { name: "Trips Casino", bonus: "150% up to €500 + 50 Free Spins", type: "Welcome Bonus", img: "https://www.askgamblers.com/build/site/kitchen-sink/build/media/img/cover-bonus.d2d1f9442f050b5c57be.svg", link: "#", restricted: true },
 ];
 
