@@ -8,14 +8,13 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Remove underline from all links */
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        /* Ensure all text remains visible without underline */
         .casino-card h3, .casino-card .terms, .casino-card .rating {
             color: black;
+            text-decoration: non;
+        }
+        .casino-card h3 a, .casino-card .terms a, .casino-card .rating a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -27,35 +26,121 @@
         <img src="https://i.ibb.co/JR8rZK1d/JOMZ-Facebook-Cover-9.png" alt="LV33 Global Casino Tips and Reviews Logo">
     </div>
 
-    <nav class="navigation">
-         <ul>
-            <li><a href="index.html">Casinos</a></li>
-            <li><a href="bonuses.html" class="active">Bonuses</a></li>
-            <li class="dropdown">
-                <a href="games.html">Games</a>
-                <div class="game-category-container">
-                 <section class="game-category">
-                        <h3>Casino Games</h3>
-                        <p>Online Slots | New Slots | Blackjack | Bingo</p>
-                        
-                        <h3>Table Games</h3>
-                        <p>Free Slots | Progressive Jackpot Slots | Roulette | Craps</p>
-                        
-                        <h3>Card Games</h3>
-                        <p>Slot Reviews | Poker | Baccarat | Lottery Games</p>
-                        
-                        <h3>Dice Games</h3>
-                    </section>
+<!-- Updated Navigation with Dropdown -->
+<nav class="navigation">
+    <ul>
+        <li><a href="index.html">Casinos</a></li>
+        <li><a href="bonuses.html" class="active">Bonuses</a></li>
+        <li class="dropdown">
+            <a href="games.html">Games</a>
+            <div class="dropdown-menu multi-column">
+                <div class="dropdown-column">
+                    <h4>Casino Games</h4>
+                    <a href="#">Online Slots</a>
+                    <a href="#">New Slots</a>
                 </div>
-            </li>
-            <li><a href="betting.html">Betting</a></li>
-            <li><a href="complaints.html">Complaints</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="forum.html">Forum</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="awards.html">Awards</a></li>
-        </ul>
-    </nav>
+                <div class="dropdown-column">
+                    <h4>Table Games</h4>
+                    <a href="#">Free Slots</a>
+                    <a href="#">Progressive Jackpot Slots</a>
+                </div>
+                <div class="dropdown-column">
+                    <h4>Card Games</h4>
+                    <a href="#">Slot Reviews</a>
+                    <a href="#">Poker</a>
+                </div>
+                <div class="dropdown-column">
+                    <h4>Dice Games</h4>
+                    <a href="#">Blackjack</a>
+                    <a href="#">Bingo</a>
+                </div>
+                <div class="dropdown-column">
+                    <a href="#">Roulette</a>
+                    <a href="#">Craps</a>
+                    <a href="#">Baccarat</a>
+                    <a href="#">Lottery Games</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="betting.html">Betting</a></li>
+        <li><a href="complaints.html">Complaints</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="awards.html">Awards</a></li>
+    </ul>
+</nav>
+
+<!-- CSS for Multi-Column Dropdown -->
+<style>
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .navigation ul li {
+        position: relative;
+        padding: 10px 15px;
+    }
+    
+    .navigation ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #222;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        min-width: 600px;
+        z-index: 1000;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .dropdown-menu .dropdown-column {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    .dropdown-menu h4 {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .dropdown-menu a {
+        color: #bbb;
+        text-decoration: none;
+        display: block;
+        padding: 5px 0;
+    }
+    
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .dropdown-menu a:hover {
+        color: #fff;
+    }
+</style>
+
+
 
     <div class="header-right">
         <div class="language-selector">
@@ -69,7 +154,9 @@
         <button class="auth-btn">Sign in or Join</button>
     </div>
 </header>
-    </section>
+
+<!-- Main Section -->
+<main>
 
     <!-- Banner Ad -->
     <section class="banner-ad">
